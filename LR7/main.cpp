@@ -6,7 +6,7 @@ int main() {
 	std::string manufacturer;
 	double inch;
 	std::string res;
-	std::cout << "Ââåäèòå ïðîèç-ëÿ, ñîîòíîøåíèå ñòîðîí è äþéìîâêó: \n";
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¿Ñ€Ð¾Ð¸Ð·-Ð»Ñ, ÑÐ¾Ð¾Ñ‚Ð½Ð¾ÑˆÐµÐ½Ð¸Ðµ ÑÑ‚Ð¾Ñ€Ð¾Ð½ Ð¸ Ð´ÑŽÐ¹Ð¼Ð¾Ð²ÐºÑƒ: \n";
 	std::getline(std::cin, manufacturer);
 	std::getline(std::cin, res);
 	std::cin >> inch;
@@ -15,7 +15,7 @@ int main() {
 	Display monik(manufacturer, inch, res);
 	
 	monik.info();
-	monik.leniwid(inch, res);
+	monik.leniwid();
 
 	return 0;
 }
