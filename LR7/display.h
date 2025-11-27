@@ -16,10 +16,10 @@ public:
 	}
 
 	void info() {
-		std::cout << "Ïðîèçâîäèòåëü: " << manufacturer << "\n" << "Äüþéìû: " << inch << '\n' << "Ñîîòíîøåíèå: " << res << std::endl;
+		std::cout << "ÐŸÑ€Ð¾Ð¸Ð·Ð²Ð¾Ð´Ð¸Ñ‚ÐµÐ»ÑŒ: " << manufacturer << "\n" << "Ð”ÑŒÑŽÐ¹Ð¼Ñ‹: " << inch << '\n' << "Ð¡Ð¾Ð¾Ñ‚Ð½Ð¾ÑˆÐµÐ½Ð¸Ðµ: " << res << std::endl;
 	}
 
-	void leniwid(double inch, std::string res) {
+	void leniwid() {
 		int pos, x, y;
 
 		pos = res.find(":", 1);
@@ -29,7 +29,7 @@ public:
 		double length, width;
 		length = (x * (inch * 2.54)) / (sqrt(x * x + y * y));
 		width = (y * (inch * 2.54)) / (sqrt(x * x + y * y));
-		std::cout << "Äëèíà: " << length << ' ' << "Øèðèíà: " << width << std::endl;
+		std::cout << "Ð”Ð»Ð¸Ð½Ð°: " << length << ' ' << "Ð¨Ð¸Ñ€Ð¸Ð½Ð°: " << width << std::endl;
 	}
 
 };
